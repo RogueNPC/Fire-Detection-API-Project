@@ -1,5 +1,5 @@
 resize_shape: [256, 256]
 targets: ['Fire_Images']
 model_file_paths: ["fire_cnn_classifier_layers.json", "fire_cnn_classifier_params.h5"]
-base_model_url: "https://github.com/RogueNPC/Fire-Detection-API-Project/releases/download/v1.0"
+base_model_url: "https://github.com/RogueNPC/Fire-Detection-API-Project/releases/tag/v1.0"
 model_sha256: "b757b4ce10917e98113523e7f0c1d50323b37f95"
