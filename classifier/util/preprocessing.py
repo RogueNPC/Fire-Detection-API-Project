@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import tensorflow as tf
 
 
 def read_from_file(file_object):
@@ -18,5 +19,6 @@ def read_from_file(file_object):
     """
     arr = np.fromstring(file_object.read(), np.uint8)
     img_np = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+    resized_arr = tf.image.resize_with_crop_or_pad(img_np, 256, 256)
 
-    return img_np
+    return resized_arr
